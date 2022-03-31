@@ -7,7 +7,7 @@
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
   </head>
   <body>
-    <p>Welcome to our test page.</p>
+    <p>Welcome to our blah page.</p>
     <div id="ggb-element">
       <script>
         var params = {
@@ -17,6 +17,11 @@
           showToolBar: true,
           showAlgebraInput: true,
           showMenuBar: true,
+          showAnimationButton: false,
+          enableUndoRedo: false,
+          buttonShadows: false,
+          buttonBorderColor: '#8feb34',
+          buttonRounding: 0,
         };
         var applet = new GGBApplet(params, true);
         window.addEventListener('load', function () {
