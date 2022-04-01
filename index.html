@@ -8,24 +8,103 @@
   </head>
   <body>
     <p>Welcome to our super amazing (and public) DID workspace.</p>
-    <div id="ggb-element">
+    <p>
+      The applet below has the following parameters with their default settings:
+    </p>
+    <ul>
+      <li>language: ('en')</li>
+      <li>showZoomButtons: (false)</li>
+      <li>showLogging: (false)</li>
+      <li>capturingThreshold: (3)</li>
+      <li>enableUndoRedo: (true)</li>
+      <li>buttonShadows: (default not specified; assuming default is false)</li>
+      <li>
+        buttonBorderColor: (Default is black, if the button background is white,
+        otherwise one shade darker than the background color)
+      </li>
+      <li>
+        keyboardType: (default not specified; assuming default is "normal";
+        options are "scientific"|"normal"|"notes")
+      </li>
+      <li>borderColor: (gray)</li>
+      <li>
+        showAnimationButton: (default not specified; assuming default is true)
+      </li>
+    </ul>
+    <div id="ggb-element1">
       <script>
-        var params = {
+        var params1 = {
           appName: 'graphing',
-          width: 800,
-          height: 600,
+          width: 590,
+          height: 590,
           showToolBar: true,
           showAlgebraInput: true,
           showMenuBar: true,
-          showAnimationButton: false,
-          enableUndoRedo: false,
-          buttonShadows: false,
-          buttonBorderColor: '#8feb34',
-          buttonRounding: 0,
+          //language:,
+          //showZoomButtons:,
+          //showLogging:,
+          //capturingThreshold:,
+          //enableUndoRedo:,
+          //buttonShadows:,
+          //buttonBorderColor:,
+          //keyboardType:,
+          //borderColor:,
+          //showAnimationButton:,
         };
-        var applet = new GGBApplet(params, true);
+        var applet1 = new GGBApplet(params1, true);
         window.addEventListener('load', function () {
-          applet.inject('ggb-element');
+          applet1.inject('ggb-element1');
+        });
+      </script>
+    </div>
+    <br />
+    <p>The applet below has the following parameters set as shown:</p>
+    <ul>
+      <li>language: 'es'</li>
+      <li>showZoomButtons: true</li>
+      <li>showLogging: true</li>
+      <li>capturingThreshold: 30</li>
+      <li>enableUndoRedo: false</li>
+      <li>buttonShadows: true</li>
+      <li>buttonBorderColor: '#FF0000'</li>
+      <li>keyboardType: 'scientific'</li>
+      <ul>
+        <li>
+          <b>I can't get keyboardType to work.</b> See notes on
+          <a
+            href="https://wiki.geogebra.org/en/Reference:GeoGebra_App_Parameters"
+            >GGB App Parameters page</a
+          >
+          for more info.
+        </li>
+      </ul>
+      <li>borderColor: '#FF0000'</li>
+      <li>showAnimationButton: false</li>
+    </ul>
+    <div id="ggb-element2">
+      <script>
+        var params2 = {
+          appName: 'classic',
+          // material_id: 'RHYH3UQ8',
+          width: 590,
+          height: 590,
+          showToolBar: true,
+          showAlgebraInput: true,
+          showMenuBar: true,
+          language: 'es',
+          showZoomButtons: true,
+          showLogging: true,
+          capturingThreshold: 30,
+          enableUndoRedo: false,
+          buttonShadows: true,
+          buttonBorderColor: '#FF0000',
+          keyboardType: 'normal',
+          borderColor: '#FF0000',
+          showAnimationButton: false,
+        };
+        var applet2 = new GGBApplet(params2, true);
+        window.addEventListener('load', function () {
+          applet2.inject('ggb-element2');
         });
       </script>
     </div>
