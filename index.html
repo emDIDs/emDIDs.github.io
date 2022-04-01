@@ -30,34 +30,26 @@
         buttonBorderColor: (Default is black, if the button background is white,
         otherwise one shade darker than the background color)
       </li>
-      <li>
-        keyboardType: (default not specified; assuming default is "normal";
-        options are "scientific"|"normal"|"notes")
-      </li>
       <li>borderColor: (gray)</li>
       <li>
         showAnimationButton: (default not specified; assuming default is true)
       </li>
+      <li>
+        keyboardType: (default not specified; assuming default is "normal";
+        options are "scientific"|"normal"|"notes")
+      </li>
     </ul>
+    <br />
+    <br />
+    <br />
+    <p>Applet 1a.</p>
     <div id="ggb-element1a">
       <script>
         var params1a = {
           appName: 'classic',
+          material_id: 'ujc6dydf',
           width: 590,
           height: 590,
-          showToolBar: true,
-          showAlgebraInput: true,
-          showMenuBar: true,
-          //language:,
-          //showZoomButtons:,
-          //showLogging:,
-          //capturingThreshold:,
-          //enableUndoRedo:,
-          //buttonShadows:,
-          //buttonBorderColor:,
-          //keyboardType:,
-          //borderColor:,
-          //showAnimationButton:,
         };
         var applet1a = new GGBApplet(params1a, true);
         window.addEventListener('load', function () {
@@ -66,26 +58,16 @@
       </script>
     </div>
     <br />
+    <br />
+    <br />
+    <p>Applet 1b.</p>
     <div id="ggb-element1b">
       <script>
         var params1b = {
           appName: 'classic',
-          material_id: 'ujc6dydf',
+          material_id: 'gny7jyag',
           width: 590,
           height: 590,
-          showToolBar: true,
-          showAlgebraInput: true,
-          showMenuBar: true,
-          //language:,
-          //showZoomButtons:,
-          //showLogging:,
-          //capturingThreshold:,
-          //enableUndoRedo:,
-          //buttonShadows:,
-          //buttonBorderColor:,
-          //keyboardType:,
-          //borderColor:,
-          //showAnimationButton:,
         };
         var applet1b = new GGBApplet(params1b, true);
         window.addEventListener('load', function () {
@@ -94,26 +76,16 @@
       </script>
     </div>
     <br />
+    <br />
+    <br />
+    <p>Applet 1c.</p>
     <div id="ggb-element1c">
       <script>
         var params1c = {
           appName: 'classic',
-          material_id: 'gny7jyag',
+          material_id: 'g4nzzqp7',
           width: 590,
           height: 590,
-          showToolBar: true,
-          showAlgebraInput: true,
-          showMenuBar: true,
-          //language:,
-          //showZoomButtons:,
-          //showLogging:,
-          //capturingThreshold:,
-          //enableUndoRedo:,
-          //buttonShadows:,
-          //buttonBorderColor:,
-          //keyboardType:,
-          //borderColor:,
-          //showAnimationButton:,
         };
         var applet1c = new GGBApplet(params1c, true);
         window.addEventListener('load', function () {
@@ -122,26 +94,21 @@
       </script>
     </div>
     <br />
+    <br />
+    <br />
+    <p>
+      Applet 1d. Note the animation marker is present on the bottom left when
+      the animation is running. It will not be present for applet 2d. It is
+      prevented in applet 1a and 2a due to custom work by the DID on that
+      applet, not solely because of the showAnimationButton parameter.
+    </p>
     <div id="ggb-element1d">
       <script>
         var params1d = {
           appName: 'classic',
-          material_id: 'g4nzzqp7',
+          material_id: 'jfkpcwzj',
           width: 590,
           height: 590,
-          showToolBar: true,
-          showAlgebraInput: true,
-          showMenuBar: true,
-          //language:,
-          //showZoomButtons:,
-          //showLogging:,
-          //capturingThreshold:,
-          //enableUndoRedo:,
-          //buttonShadows:,
-          //buttonBorderColor:,
-          //keyboardType:,
-          //borderColor:,
-          //showAnimationButton:,
         };
         var applet1d = new GGBApplet(params1d, true);
         window.addEventListener('load', function () {
@@ -161,6 +128,8 @@
       <li>enableUndoRedo: false</li>
       <li>buttonShadows: true</li>
       <li>buttonBorderColor: '#FF0000'</li>
+      <li>borderColor: '#FF0000'</li>
+      <li>showAnimationButton: false</li>
       <li>keyboardType: 'scientific'</li>
       <ul>
         <li>
@@ -172,18 +141,22 @@
           for more info.
         </li>
       </ul>
-      <li>borderColor: '#FF0000'</li>
-      <li>showAnimationButton: false</li>
     </ul>
+    <br />
+    <br />
+    <br />
+    <p>
+      Applet 2a. Note how far away the mouse can be when clicking Point A here
+      compared to applet 1a. This is becaue of capturingThreshold being set to
+      30.
+    </p>
     <div id="ggb-element2a">
       <script>
         var params2a = {
           appName: 'classic',
+          material_id: 'ujc6dydf',
           width: 590,
           height: 590,
-          showToolBar: true,
-          showAlgebraInput: true,
-          showMenuBar: true,
           language: 'es',
           showZoomButtons: true,
           showLogging: true,
@@ -202,16 +175,16 @@
       </script>
     </div>
     <br />
+    <br />
+    <br />
+    <p>Applet 2b.</p>
     <div id="ggb-element2b">
       <script>
         var params2b = {
           appName: 'classic',
-          material_id: 'ujc6dydf',
+          material_id: 'gny7jyag',
           width: 590,
           height: 590,
-          showToolBar: true,
-          showAlgebraInput: true,
-          showMenuBar: true,
           language: 'es',
           showZoomButtons: true,
           showLogging: true,
@@ -230,16 +203,21 @@
       </script>
     </div>
     <br />
+    <br />
+    <br />
+    <p>
+      Applet 2c. Note the zoomButtons being present here and on the following
+      applet. They are not on the first two applets because the screen is locked
+      in the applet itself (in other words, the buttons do not appear if the
+      applet CANNOT zoom.).
+    </p>
     <div id="ggb-element2c">
       <script>
         var params2c = {
           appName: 'classic',
-          material_id: 'gny7jyag',
+          material_id: 'g4nzzqp7',
           width: 590,
           height: 590,
-          showToolBar: true,
-          showAlgebraInput: true,
-          showMenuBar: true,
           language: 'es',
           showZoomButtons: true,
           showLogging: true,
@@ -258,16 +236,21 @@
       </script>
     </div>
     <br />
+    <br />
+    <br />
+    <p>
+      Applet 2d. Note the animation marker is not present on the bottom left
+      when the animation is running like it was for applet 1d. It is prevented
+      in applet 1a and 2a due to custom work by the DID on that applet, not
+      solely because of the showAnimationButton parameter.
+    </p>
     <div id="ggb-element2d">
       <script>
         var params2d = {
           appName: 'classic',
-          material_id: 'g4nzzqp7',
+          material_id: 'jfkpcwzj',
           width: 590,
           height: 590,
-          showToolBar: true,
-          showAlgebraInput: true,
-          showMenuBar: true,
           language: 'es',
           showZoomButtons: true,
           showLogging: true,
@@ -282,6 +265,78 @@
         var applet2d = new GGBApplet(params2d, true);
         window.addEventListener('load', function () {
           applet2d.inject('ggb-element2d');
+        });
+      </script>
+    </div>
+    <br />
+    <br />
+    <br />
+    <p>
+      The following 3 applets are set to the appName of "evaluator". The first
+      has keyboardType set to "scientific", the second has keybaordType set to
+      "normal", and the third has it set to "notes". I am unable to see a
+      difference between the three keyboard types. The error very likely has to
+      do with me (Levi) not setting the parameters correctly, and would need
+      some input from Mike or someone else to get this to work.
+    </p>
+    <p>
+      See the
+      <a href="https://wiki.geogebra.org/en/Reference:GeoGebra_App_Parameters"
+        >GGB App Parameters page</a
+      >
+      for additional information.
+    </p>
+    <br />
+    <br />
+    <br />
+    <p>Applet 3a.</p>
+    <div id="ggb-element3a">
+      <script>
+        var params3a = {
+          appName: 'evaluator',
+          width: 590,
+          height: 590,
+          keyboardType: 'scientific',
+        };
+        var applet3a = new GGBApplet(params3a, true);
+        window.addEventListener('load', function () {
+          applet3a.inject('ggb-element3a');
+        });
+      </script>
+    </div>
+    <br />
+    <br />
+    <br />
+    <p>Applet 3b.</p>
+    <div id="ggb-element3b">
+      <script>
+        var params3b = {
+          appName: 'evaluator',
+          width: 590,
+          height: 590,
+          keyboardType: 'normal',
+        };
+        var applet3b = new GGBApplet(params3b, true);
+        window.addEventListener('load', function () {
+          applet3b.inject('ggb-element3b');
+        });
+      </script>
+    </div>
+    <br />
+    <br />
+    <br />
+    <p>Applet 3c.</p>
+    <div id="ggb-element3c">
+      <script>
+        var params3c = {
+          appName: 'evaluator',
+          width: 590,
+          height: 590,
+          keyboardType: 'notes',
+        };
+        var applet3c = new GGBApplet(params3c, true);
+        window.addEventListener('load', function () {
+          applet3c.inject('ggb-element3c');
         });
       </script>
     </div>
