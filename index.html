@@ -24,12 +24,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://emDIDs.github.io/DIDtools/index.html">
-                        DIDtools
-                    </a>
+                    <!-- https://emDIDs.github.io/DIDtools/index.html -->
+                    <a href="#" onclick="clickFunction()">DIDtools</a>
                 </li>
             </ul>
         </nav>
-        <p></p>
+        <p id="broken-click" class="hidden">DIDtools maybe coming soon?</p>
+        <script>
+            function clickFunction(){
+                document.querySelector("#broken-click").classList.remove("hidden")
+                setTimeout(()=>{document.querySelector("#broken-click").classList.add("hidden")},5000)
+            }
+        </script>
     </body>
 </html>
