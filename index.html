@@ -18,18 +18,30 @@
         <nav class="nav-bar">
             <ul>
                 <li>
+                    <a href="https://emDIDs.github.io/translations/">
+                        Old&nbsp;CATS
+                    </a>
+                </li>
+                <li>
                     <a
                         href="https://emDIDs.github.io/translations/fiddle/index.html">
                         Fiddle
                     </a>
                 </li>
                 <li>
-                    <a href="https://emDIDs.github.io/DIDtools/index.html">
-                        DIDtools
-                    </a>
+                    <!-- https://emDIDs.github.io/DIDtools/index.html -->
+                    <a href="#" onclick="clickFunction()">DIDtools</a>
                 </li>
             </ul>
         </nav>
-        <p></p>
+        <p id="broken-click" class="hidden">DIDtools maybe coming soon?</p>
+        <script>
+            function clickFunction(){
+                document.querySelector("#broken-click").classList.remove("hidden");
+                setTimeout(()=>{document.querySelector("#broken-click").classList.add("hidden");
+                window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                },2000)
+            }
+        </script>
     </body>
 </html>
